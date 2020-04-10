@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var loginManager: LoginManager
+    
     var body: some View {
-        Text("Hello, World!")
+        Group {
+            if (loginManager.isLoggedIn) {
+            AppView()
+          } else {
+            AuthView()
+          }
+        }
     }
 }
 
