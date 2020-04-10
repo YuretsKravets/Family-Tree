@@ -42,7 +42,15 @@ class LoginManager: ObservableObject {
             return false
         }
     }
-    
+    func signOut() -> Bool {
+        if isLoggedIn {
+            email = nil
+            password = nil
+            isLoggedIn = false
+            return true
+        }
+        return false
+    }
     func checkData(_ email: String, _ password: String) -> Bool {
         if email != "" && password != "" && email.isValidEmail() {
             return true
