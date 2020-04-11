@@ -10,18 +10,17 @@ import SwiftUI
 
 struct TreeView: View {
     
-    @Binding var isPresented: Bool
-    @ObservedObject var viewModel: DemoData
+    @ObservedObject var dataModel: DemoData
     
     var body: some View {
         ZStack {
             Color(K.Colors.green)
                 .edgesIgnoringSafeArea(.all)
-            Diagram(tree: viewModel.tree, node: { node in
+            Diagram(tree: dataModel.tree, node: { node in
                 MemberView(member: node)
             })
             .onAppear {
-                self.viewModel.loadTree()
+                self.dataModel.loadTree()
             }
         }
     }

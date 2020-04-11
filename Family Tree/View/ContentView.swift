@@ -10,21 +10,35 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject var loginManager: LoginManager
+    @EnvironmentObject var session: SessionStore
+    
+    func getUser () {
+        session.listen()
+    }
     
     var body: some View {
         Group {
-            if (loginManager.isLoggedIn) {
-            AppView()
+            if (session.session != nil) {
+                NavigationView{
+                    AppView()
+                        .navigationBarItems(trailing: Button(action: {
+                            self.session.signOut()
+                        }) {
+                            Text("LogOut")
+                                .foregroundColor(.red)
+                        })
+                }
+                    
           } else {
-            AuthView()
+                AuthView()
           }
-        }
+        }.onAppear(perform: getUser)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(SessionStore())
     }
 }

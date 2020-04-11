@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		DA3AFECD2433F81D00FFD91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3AFECC2433F81D00FFD91A /* Assets.xcassets */; };
 		DA3AFED02433F81D00FFD91A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3AFECF2433F81D00FFD91A /* Preview Assets.xcassets */; };
 		DA3AFED32433F81D00FFD91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3AFED12433F81D00FFD91A /* LaunchScreen.storyboard */; };
-		DA3AFEDF2433F95F00FFD91A /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AFEDE2433F95F00FFD91A /* LoginManager.swift */; };
+		DA3AFEDF2433F95F00FFD91A /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AFEDE2433F95F00FFD91A /* SessionStore.swift */; };
 		DA3AFEE12433FA1A00FFD91A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AFEE02433FA1A00FFD91A /* Constants.swift */; };
 		DA3AFEE32433FC5500FFD91A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AFEE22433FC5500FFD91A /* AppView.swift */; };
 		DA3AFEE52433FC6500FFD91A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AFEE42433FC6500FFD91A /* AuthView.swift */; };
@@ -25,6 +25,8 @@
 		DA3AFEF5243658C100FFD91A /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AFEF4243658C100FFD91A /* MemberView.swift */; };
 		DA3AFEF824365C4100FFD91A /* AdaptsToSoftwareKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AFEF724365C4100FFD91A /* AdaptsToSoftwareKeyboard.swift */; };
 		DACC3B142441EF33007FF6DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DACC3B132441EF33007FF6DA /* GoogleService-Info.plist */; };
+		DACC3B1A244258C2007FF6DA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC3B19244258C2007FF6DA /* SignInView.swift */; };
+		DACC3B1C24425A77007FF6DA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC3B1B24425A77007FF6DA /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +41,7 @@
 		DA3AFECF2433F81D00FFD91A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA3AFED22433F81D00FFD91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA3AFED42433F81D00FFD91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA3AFEDE2433F95F00FFD91A /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		DA3AFEDE2433F95F00FFD91A /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		DA3AFEE02433FA1A00FFD91A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DA3AFEE22433FC5500FFD91A /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		DA3AFEE42433FC6500FFD91A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		DA3AFEF4243658C100FFD91A /* MemberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 		DA3AFEF724365C4100FFD91A /* AdaptsToSoftwareKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToSoftwareKeyboard.swift; sourceTree = "<group>"; };
 		DACC3B132441EF33007FF6DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DACC3B19244258C2007FF6DA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		DACC3B1B24425A77007FF6DA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +117,7 @@
 			children = (
 				DA3AFEE6243654AB00FFD91A /* Tree.swift */,
 				DA3AFEE8243654B500FFD91A /* Person.swift */,
-				DA3AFEDE2433F95F00FFD91A /* LoginManager.swift */,
+				DA3AFEDE2433F95F00FFD91A /* SessionStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,10 +125,10 @@
 		DA3AFEDB2433F86800FFD91A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA3AFEF32436559C00FFD91A /* Tree */,
 				DA3AFECA2433F81C00FFD91A /* ContentView.swift */,
+				DA3AFEF32436559C00FFD91A /* Tree */,
+				DACC3B182442589E007FF6DA /* AuthView */,
 				DA3AFEE22433FC5500FFD91A /* AppView.swift */,
-				DA3AFEE42433FC6500FFD91A /* AuthView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +151,16 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		DACC3B182442589E007FF6DA /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				DA3AFEE42433FC6500FFD91A /* AuthView.swift */,
+				DACC3B19244258C2007FF6DA /* SignInView.swift */,
+				DACC3B1B24425A77007FF6DA /* SignUpView.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
 		DB7CAF0A8C33F1D0CEF4C426 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +175,6 @@
 				2EE178A8F00A511501BC109D /* Pods-Family Tree.debug.xcconfig */,
 				8D1283710C1E31CA5395F151 /* Pods-Family Tree.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -282,13 +295,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3AFEF5243658C100FFD91A /* MemberView.swift in Sources */,
+				DACC3B1C24425A77007FF6DA /* SignUpView.swift in Sources */,
 				DA3AFEED243654F200FFD91A /* Diagram.swift in Sources */,
 				DA3AFEEB243654DD00FFD91A /* TreeView.swift in Sources */,
 				DA3AFEE52433FC6500FFD91A /* AuthView.swift in Sources */,
 				DA3AFEE12433FA1A00FFD91A /* Constants.swift in Sources */,
 				DA3AFEC72433F81C00FFD91A /* AppDelegate.swift in Sources */,
 				DA3AFEE32433FC5500FFD91A /* AppView.swift in Sources */,
-				DA3AFEDF2433F95F00FFD91A /* LoginManager.swift in Sources */,
+				DA3AFEDF2433F95F00FFD91A /* SessionStore.swift in Sources */,
+				DACC3B1A244258C2007FF6DA /* SignInView.swift in Sources */,
 				DA3AFEE7243654AB00FFD91A /* Tree.swift in Sources */,
 				DA3AFEF824365C4100FFD91A /* AdaptsToSoftwareKeyboard.swift in Sources */,
 				DA3AFEE9243654B500FFD91A /* Person.swift in Sources */,

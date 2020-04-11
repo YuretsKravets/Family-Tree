@@ -46,5 +46,6 @@ struct MemberView_Previews: PreviewProvider {
                 avatar: K.Images.defaultAvatar
             )
         )
+            .previewLayout(.sizeThatFits)
     }
 }

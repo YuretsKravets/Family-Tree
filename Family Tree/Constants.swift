@@ -9,11 +9,6 @@
 import Foundation
 
 struct K {
-    static var users: [(String, String)] = [
-        ("a@b.com", "123456")
-    ]
-//    static let email = "A@b.com"
-//    static let password = "123456"
     
     struct Colors {
         static let beige = "beige"

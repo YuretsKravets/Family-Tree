@@ -9,39 +9,12 @@
 import SwiftUI
 
 struct AppView: View {
-    
-    @State var treeIsPresented: Bool = true
-    @State var signOutError: Bool = false
-    
-    @EnvironmentObject var loginManager: LoginManager
-    
-    func signOut() {
-        if loginManager.signOut() {
-            treeIsPresented = false
-        } else {
-            signOutError = true
-        }
-    }
+
+    @EnvironmentObject var session: SessionStore
+
     var body: some View {
-        TabView {
-            TreeView(isPresented: $treeIsPresented, viewModel: TreeView.DemoData())
-                .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("Tree")
-                }
-            Button(action: signOut) {
-                Text("Sign Out")
-                if signOutError {
-                    Text("ahh crap")
-                }
-            }
-                .tabItem {
-                    Image(systemName: "person.crop.circle")
-                    Text("Account")
-                }
-        }
-        .edgesIgnoringSafeArea(.top)
-        .font(.headline)
+        
+            TreeView(dataModel: TreeView.DemoData())
     }
 }
 
