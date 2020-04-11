@@ -36,6 +36,7 @@ struct SignInView: View {
     
     @State var loading = false
     @State var error = false
+    var errorDescription = ""
 
     @EnvironmentObject var loginManager: LoginManager
 
@@ -79,8 +80,8 @@ struct SignInView: View {
                 Divider()
                     .padding(.horizontal, 30)
                 if (error) {
-                    Text("ahhh crap")
-                        .foregroundColor(.red)
+                    Text(loginManager.errorDescription)
+                            .foregroundColor(.red)
                 }
             }
             Group {
@@ -133,9 +134,9 @@ struct SignUpView: View {
         success = false
         
         if loginManager.signUp(email,password) {
+            success = true
             email = ""
             password = ""
-            success = true
         } else {
             error = true
         }
@@ -172,8 +173,8 @@ struct SignUpView: View {
                         .foregroundColor(.green)
                 }
                 if (error) {
-                    Text("ahhh crap")
-                        .foregroundColor(.red)
+                    Text(loginManager.errorDescription)
+                            .foregroundColor(.red)
                 }
             }
             Group {
